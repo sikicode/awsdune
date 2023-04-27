@@ -17,10 +17,17 @@
 3. IAM Policy
    - Policy contains different permissions determine whether the request is allowed or denied
    - Stored in JSON docs in AWS
+   - Default Deny
    - Types: 
      - Identity based: can attach to a principle (IAM user/role/group)
        - Managed policies: AWS or customer managed
        - Inline policies
      - Resource based: can attach to a resource, such as S3 bucket.
        - Are only inline policies
-4. 
+4. IAM Roles
+    - Are not users (can be EC2 instances or applications)
+    - Allows you to grant access without long-term access keys (!)
+    - Delegation (you grant access to someone) vs Federation (identity provider and AWS)
+    - Trust policy vs permission policy
+    - Principle can be user, group, or role
+5. 
