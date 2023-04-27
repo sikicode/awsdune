@@ -1,10 +1,8 @@
-#### 0420
+#### IAM
 1. IAM: Separation of access
     - IAM doesn't require region selection
     - Account alias 
     - MFA (root access keys are not recommended)
-    - 
-    - 
 2. IAM Users and Groups 
     - Users:
       - By default a user doesn't have any permission
@@ -30,4 +28,7 @@
     - Delegation (you grant access to someone) vs Federation (identity provider and AWS)
     - Trust policy vs permission policy
     - Principle can be user, group, or role
-5. 
+    - One role per instance only
+    - Cannot add role to IAM group, roles cannot make direct access to AWS services
+    - Best practices: ![IAM best practices.png](img%2FIAM%20best%20practices.png)
+![best practices 2.png](img%2Fbest%20practices%202.png)
